@@ -1,5 +1,4 @@
 .footer {
-
   &__inner {
     padding: 30px 25px;
     gap: 30px;
@@ -62,5 +61,10 @@
       position: relative;
       left: -13px;
     }
+  }
+
+  &__desc {
+    text-align: center;
+    padding: 15px 0 20px 0;
   }
 }

@@ -564,6 +564,11 @@ img {
   left: -13px;
 }
 
+.footer__desc {
+  text-align: center;
+  padding: 15px 0 20px 0;
+}
+
 .main {
   padding-top: 15px;
 }

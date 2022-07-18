@@ -16,13 +16,16 @@
   }
 
   &__item {
-    font-size: 14px;
-    line-height: 30px;
-    @include tr-bg_cl;
-    cursor: pointer;
+    a {
+      font-size: 14px;
+      line-height: 30px;
+      color: $cl-primary;
+      @include tr-bg_cl;
+      cursor: pointer;
 
-    &:hover {
-      color: $cl-secondary;
+      &:hover {
+        color: $cl-secondary;
+      }
     }
   }
 

@@ -18,7 +18,7 @@
 
    <header id="header" class="header">
       <div class="container">
-
+         
          <div class="header__inner row between align-center">
             <a href="#">
                <img src="./img/logo.svg" alt="logo" width="150" height="35">
@@ -28,13 +28,13 @@
             </nav>
             <ul class="header__logins logins row align-center">
                <li>
-                  <button class="logins__search"><i class="far fa-search"></i></button>
+                  <a class="logins__search" href="#"><i class="far fa-search"></i></a>
                </li>
                <li>
-                  <button class="logins__search"><i class="far fa-shopping-cart"></i></button>
+                  <a class="logins__search" href="#"><i class="far fa-shopping-cart"></i></a>
                </li>
                <li>
-                  <a class="logins__btn" href="#">
+                  <a class="logins__btn btn" href="#">
                      <i class="far fa-sign-out"></i>
                      Login
                   </a>
@@ -57,7 +57,7 @@
                         <span class="main__txt">Welcome to GreenShop</span>
                         <h2 class="main__title">Let’s Make a Better <span>Planet</span></h2>
                         <p class="main__desc">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
-                        <a class="main__btn" href="#">shop now</a>
+                        <a class="main__btn btn" href="#">shop now</a>
                      </div>
                      <img class="main__img" src="./img/hero.png" alt="main-img">
                   </div>
@@ -68,7 +68,7 @@
                         <span class="main__txt">Welcome to GreenShop</span>
                         <h2 class="main__title">Let’s Improve a Better <span>Galaxy</span></h2>
                         <p class="main__desc">We are an online plant shop offering a wide range of cheap and trendy plants. Lorem, ipsum dollor an unique Urban Jungle. Order your favorite plants!</p>
-                        <a class="main__btn" href="#">shop now</a>
+                        <a class="main__btn btn" href="#">shop now</a>
                      </div>
                      <img class="main__img" src="./img/hero.png" alt="main-img">
                   </div>
@@ -79,7 +79,7 @@
                         <span class="main__txt">Welcome to GreenShop</span>
                         <h2 class="main__title">Let’s Make a Greed <span>Wood</span></h2>
                         <p class="main__desc">We are an online plant shop offering a wide range Lorem ipsum dolor sit amet. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
-                        <a class="main__btn" href="#">shop now</a>
+                        <a class="main__btn btn" href="#">shop now</a>
                      </div>
                      <img class="main__img" src="./img/hero.png" alt="main-img">
                   </div>
@@ -138,23 +138,33 @@
                <div class="category__diver">
                   <div class="category__top top row between">
                      <ul class="top__list list row">
-                        <li class="list__item">All Plants</li>
+                        <li class="list__item active">All Plants</li>
                         <li class="list__item">New Arrivals</li>
                         <li class="list__item">Sale</li>
                      </ul>
                      <div class="top__sorts">
-                        <span class="top__sort">Default sorting <i class="far fa-angle-down"></i></span>
+                        <select class="top__select" name="top__select">
+                           <option value="1">Default sorting</option>
+                        </select>
                      </div>
                   </div>
                   <div class="category__product product">
                      <ul class="product__list row between"></ul>
                      <ul class="product__pagenation pagenation row">
-                        <li class="pagenation__item">1</li>
-                        <li class="pagenation__item">2</li>
-                        <li class="pagenation__item">3</li>
-                        <li class="pagenation__item">4</li>
+                        <li class="pagenation__item active">
+                           <a href="#">1</a>
+                        </li>
                         <li class="pagenation__item">
-                           <i class="far fa-angle-right"></i>
+                           <a href="#">2</a>
+                        </li>
+                        <li class="pagenation__item">
+                           <a href="#">3</a>
+                        </li>
+                        <li class="pagenation__item">
+                           <a href="#">4</a>
+                        </li>
+                        <li class="pagenation__item">
+                           <a href="#"><i class="far fa-angle-right"></i></a>
                         </li>
                      </ul>
                   </div>
@@ -170,23 +180,23 @@
             <div class="find__inner row between">
                <div class="find__wrapper col-6 row align-center">
                   <div class="bg"></div>
-                  <img src="./img/item5.png" alt="img" width="240" height="240">
+                  <img src="./img/item5.png" alt="img" width="210" height="210">
                   <div class="find__titles">
                      <h2 class="find__title">Summer cactus & succulents</h2>
                      <p class="find__desc">We are an online plant shop offering a wide range of cheap and trendy plants</p>
-                     <a class="find__btn" href="#">
+                     <a class="find__btn btn" href="#">
                         Find More
                         <i class="far fa-long-arrow-right"></i>
                      </a>
                   </div>
                </div>
-               <div class="find__diver col-6 row align-center">
+               <div class="find__wrapper col-6 row align-center">
                   <div class="bg"></div>
-                  <img src="./img/item3.png" alt="img" width="240" height="240">
+                  <img src="./img/item3.png" alt="img" width="210" height="210">
                   <div class="find__titles">
                      <h2 class="find__title">Summer cactus & succulents</h2>
                      <p class="find__desc">We are an online plant shop offering a wide range of cheap and trendy plants</p>
-                     <a class="find__btn" href="#">
+                     <a class="find__btn btn" href="#">
                         Find More
                         <i class="far fa-long-arrow-right"></i>
                      </a>
@@ -272,19 +282,19 @@
                <span class="footer__list-title">Social Media</span>
                <ul class="social__list row">
                   <li class="social__item">
-                     <i class="fab fa-facebook-f"></i>
+                     <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                   </li>
                   <li class="social__item">
-                     <i class="fab fa-instagram"></i>
+                     <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                   </li>
                   <li class="social__item">
-                     <i class="fab fa-twitter"></i>
+                     <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                   </li>
                   <li class="social__item">
-                     <i class="fab fa-linkedin-in"></i>
+                     <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                   </li>
                   <li class="social__item">
-                     <i class="fab fa-youtube"></i>
+                     <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
                   </li>
                </ul>
                <span class="footer__list-title">My Account</span>

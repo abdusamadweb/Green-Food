@@ -4,16 +4,6 @@
   list-style: none;
 }
 
-@mixin secondary-btn {
-  border-radius: 6px;
-  color: #fff;
-  background: $cl-secondary;
-  @include tr-bg_cl;
-  &:hover {
-    background: $cl-primary;
-  }
-}
-
 @mixin breakpoint-down ($size) {
   @media screen and (max-width: $size) {
     @content;

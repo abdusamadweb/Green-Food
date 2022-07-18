@@ -43,7 +43,21 @@ ul, ol {
 .bx {
    position: relative;
 }
- 
+
+.btn {
+   border-radius: 6px;
+   color: #fff;
+   background: #3D3D3D;
+   transition: color 0.3s ease,
+   background 0.3s ease;
+}
+.btn:hover {
+   background: #46A358;
+}
+.btn i {
+   margin-right: 4px;
+}
+
 .fulled-container {
    width: 100%;
    padding: 0 20px;

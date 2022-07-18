@@ -94,7 +94,7 @@ const data = {
     },
     {
       title: 'Cacti & Succulent Care Tips',
-      desc: 'Cacti and succulents thrive in containers and because most are. ',
+      desc: 'Cacti and succulents thrive in containers and because most area. ',
       src: '../img/blog3.jpg'
     },
     {

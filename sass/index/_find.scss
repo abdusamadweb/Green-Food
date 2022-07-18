@@ -1,6 +1,10 @@
 .find {
   padding: 50px 0;
 
+  &__wrapper {
+    padding: 30px;
+  }
+
   .col-6 {
     position: relative;
     background: $bgcl-gray;
@@ -20,7 +24,6 @@
   &__titles {
     max-width: 350px;
     text-align: end;
-    padding: 30px;
   }
 
   &__title {
@@ -40,7 +43,6 @@
   }
 
   &__btn {
-    @include secondary-btn;
     font-size: 14px;
     padding: 8px 20px;
 
@@ -51,7 +53,7 @@
   }
 }
 
-@include breakpoint-down (1260px) {
+@include breakpoint-down (1290px) {
   .find__inner {
     justify-content: center;
   }

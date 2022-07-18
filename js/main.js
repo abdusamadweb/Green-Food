@@ -1,16 +1,26 @@
 const navList = document.querySelector('.nav__list');
 for (let i of data.nav) {
-  navList.innerHTML += `<li><a href="#">${i}</a></li>`;
+  navList.innerHTML += `<li class="nav__item"><a class="nav__item-link" href="#">${i}</a></li>`;
 }
 
 const typesList = document.querySelector('.types__list');
 for (let i of data.categories) {
   typesList.innerHTML += 
   `<li class="types__item item row between">
-    <span>${i.title}</span>
+    <span class="txt">${i.title}</span>
     <span>(${i.count})</span>
   </li>`
 }
+
+const topItem = document.querySelectorAll('.list__item');
+topItem.forEach(item => {
+  item.addEventListener('click', () => {
+    topItem.forEach(itemm => {
+        itemm.classList.remove('active');
+     })
+     item.classList.add('active');
+  })
+})
 
 const productList = document.querySelector('.product__list');
 for (let i of data.items) {
@@ -42,10 +52,12 @@ for (let i of data.blogs) {
   blogList.innerHTML +=
   `<li class="blog__item item col-3">
     <img class="item__img" src="${i.src}" alt="blog-img">
-    <div class="item__titles">
-      <time class="item__time" datetime="12-06-2022">September 12  I Read in 6 minutes</time>
-      <h3 class="item__title">${i.title}</h3>
-      <p class="item__desc">${i.desc}</p>
+    <div class="item__titles row">
+      <div>
+        <time class="item__time" datetime="12-06-2022">September 12  I Read in 6 minutes</time>
+        <h3 class="item__title">${i.title}</h3>
+        <p class="item__desc">${i.desc}</p>
+      </div>
       <a class="item__btn" href="#">
           Read More
           <i class="far fa-long-arrow-right"></i>
@@ -67,15 +79,15 @@ for (let i of data.news) {
 const footerList1 = document.querySelector('.footer__list1');
 for (let i of data.footer.slice(0, 5)) {
   footerList1.innerHTML +=
-  `<li class="footer__item">${i}</li>`
+  `<li class="footer__item"><a href="#">${i}</a></li>`
 }
 const footerList2 = document.querySelector('.footer__list2');
 for (let i of data.footer.slice(5, 10)) {
   footerList2.innerHTML +=
-  `<li class="footer__item">${i}</li>`
+  `<li class="footer__item"><a href="#">${i}</a></li>`
 }
 const footerList3 = document.querySelector('.footer__list3');
 for (let i of data.footer.slice(7, 11)) {
   footerList3.innerHTML +=
-  `<li class="footer__item">${i}</li>`
+  `<li class="footer__item"><a href="#">${i}</a></li>`
 }

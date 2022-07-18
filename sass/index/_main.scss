@@ -5,6 +5,10 @@
     background: $bgcl-gray;
   }
 
+  &__wrapper {
+    padding-right: 40px;
+  }
+
   .fades .slick-dots {
     position: relative;
     top: -15px;
@@ -56,21 +60,22 @@
   }
 
   &__btn {
-    @include secondary-btn;
     font-weight: 500;
     text-transform: uppercase;
     padding: 10px 25px;
   }
 
   &__img {
-    width: 518px;
-    height: 518px;
+    width: 480px;
+    height: 480px;
+
   }
 }
 
 @include breakpoint-down (1275px) {
   .main__wrapper {
     justify-content: center;
+    padding-right: 0;
   }
   .main__titles {
     padding-bottom: 0;
